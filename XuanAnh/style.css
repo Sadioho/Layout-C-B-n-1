@@ -683,7 +683,9 @@ body {
     flex-grow: 1;
     margin: 10px 0;
 }
-
+.contact_box a{
+    color: var(--text-color);
+}
 .contact_box_left {
     padding: 0 20px;
 }
