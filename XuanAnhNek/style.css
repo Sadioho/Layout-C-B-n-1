@@ -259,7 +259,7 @@ body {
     border: 2px solid var(--white-color);
     background: rgba(255, 255, 255, 0.007);
     outline: none;
-    
+
 }
 
 .header_content .header_button_two {
@@ -556,7 +556,8 @@ body {
 .latest_btn button {
     margin: 60px 0px;
 }
-.latest_btn button a{
+
+.latest_btn button a {
     color: var(--white-color);
 }
 
@@ -709,9 +710,10 @@ body {
     flex-direction: column;
     font-family: lato;
 }
-.container_box a{
-    color: var(--text-color);   
-   }
+
+.container_box a {
+    color: var(--text-color);
+}
 
 .team_icon_contact {
     display: flex;
@@ -720,11 +722,13 @@ body {
 
 .team_icon_contact a {
     color: gray;
-    margin: 0 20px;
+    margin: 0 10px;
+    font-size: 14px;
 }
 
 .text_end {
     justify-content: flex-end;
+    padding: 0 20px;
 }
 
 .contact_input {
@@ -737,7 +741,7 @@ body {
 
 .form_contact {
     padding: 0 20px;
-    margin-top: 90px;
+    margin-top: 50px;
 }
 
 .contact_input label {
@@ -788,6 +792,7 @@ body {
 
 .widget {
     padding: 0 20px;
+    margin-right: 100px;
 }
 
 .textwidget {
@@ -824,7 +829,8 @@ body {
 .team_card_content {
     margin-top: 50px;
 }
-.copyright2{
+
+.copyright2 {
     color: var(--white-color);
 }
 
@@ -920,8 +926,10 @@ body {
 .sidebar h2 {
     color: var(--title-color);
 }
-.widget_search{
+
+.widget_search {
     background-color: lightgreen;
+    margin-bottom: 90px;
 }
 
 
@@ -934,24 +942,39 @@ body {
     position: relative;
 
 }
-.search_form_box i{
+
+.search_form_box i {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 15px;
     color: var(--title-color);
 }
+
 .search_form_box input {
     padding: 10px 10px;
     font-size: 16px;
     flex-grow: 1;
-    border: 0;
-    outline: 1px solid rgb(172, 172, 172);
+    border: 1px solid rgb(155, 155, 155);
+    outline: none;
+    border-radius: 5px;
+    font-family: lato;
+
+}
+[type="search"]::-webkit-search-cancel-button
+ {
+  -webkit-appearance: none;
+}
+
+.search_form_box input:active {
+    border: 1px solid var(--purper-color);
 
 }
 
 .search_form_box input:hover {
-    outline: 1px solid rgb(0, 0, 0);
+    border: 1px solid var(--purper-color);
+
+
 }
 
 .widget_recent_entries,
@@ -959,7 +982,7 @@ body {
 .widget_recent_archive,
 .widget_recent_categories,
 .widget_meta {
-    margin: 20px 0;
+    margin: 60px 0;
 }
 
 .widget_recent_comment ul li {
@@ -970,15 +993,18 @@ body {
 
 .widget_recent_entries ul li a {
     color: var(--text-color);
-    line-height: 40px;
+    margin: 20px 0;
 }
 
 .widget_recent_comment span {
     color: var(--text-color);
 }
-
+.widget_recent_comment li{
+    margin: 20px 0;
+}
 .widget_recent_comment a {
     color: var(--yellow-color);
+
 }
 
 .widget_recent_comment a:hover {
@@ -986,13 +1012,16 @@ body {
 }
 
 /* end_poter_blog */
-/*end page blog */ 
+/*end page blog */
 /* page read more */
 .card_blog {
     overflow: hidden;
     text-align: center;
     font-size: 14px;
     color: var(--text-color);
+    border: 1px solid rgb(231, 231, 231);
+    box-sizing: border-box;
+
 }
 
 .card_blog_text h3 {
@@ -1023,6 +1052,9 @@ body {
     padding: 20px 40px;
     font-size: 16px;
     text-align: start;
+    border: 0;
+    background-color: #f9f9f9;
+    margin: 20px 0;
 }
 
 .card_blog_2 h3 {
@@ -1062,7 +1094,7 @@ body {
 }
 
 
-.comment_blog{
+.comment_blog {
     margin: 20px 0;
     display: flex;
     flex-wrap: wrap;
@@ -1070,26 +1102,31 @@ body {
     font-family: lato;
 
 }
-.comment_blog h4{
-    font-weight:400;
+
+.comment_blog h4 {
+    font-weight: 400;
 }
-.comment_blog h4 span{
+
+.comment_blog h4 span {
     color: var(--yellow-color);
 }
 
-.comment_card_blog_img{
+.comment_card_blog_img {
     width: 100px;
     height: 100px;
     margin-right: 20px;
 }
-.comment_card_blog_img img{
+
+.comment_card_blog_img img {
     width: 100%;
 
 }
-.blog_admin{
+
+.blog_admin {
     margin-left: 50px;
 }
-.blog_user{
+
+.blog_user {
     margin-left: 100px;
 }
 
@@ -1183,10 +1220,11 @@ body {
         justify-content: space-between;
         font-family: lato;
     }
-  
+
 
     .contact_box {
         flex-direction: row;
+
     }
 
     .contact_box_left {
@@ -1195,7 +1233,7 @@ body {
 
     .row {
         display: flex;
-        justify-content: space-around;
+        /* justify-content: space-around; */
     }
 
     .contact_input {
@@ -1297,14 +1335,16 @@ body {
     .container_blog .header_heading {
         font-size: 80px;
     }
+
     .related_img {
         margin: 20px;
     }
 
     .related_item {
-        flex-wrap:nowrap;
+        flex-wrap: nowrap;
     }
-    .blog_post_meta{
+
+    .blog_post_meta {
         text-align: start;
     }
 }
