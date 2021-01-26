@@ -246,6 +246,8 @@ body {
     color: var(--white-color);
     margin-top: 70px;
     transition: all 0.5s;
+    font-family: lato;
+
 }
 
 .header_heading {
@@ -257,6 +259,7 @@ body {
     border: 2px solid var(--white-color);
     background: rgba(255, 255, 255, 0.007);
     outline: none;
+    
 }
 
 .header_content .header_button_two {
@@ -381,6 +384,7 @@ body {
 .skill_text_bottom {
     margin-top: 20px;
     text-align: start;
+    font-family: lato;
 }
 
 /* end skill */
@@ -436,6 +440,7 @@ body {
 
 .slick-dots {
     position: unset !important;
+    font-family: lato;
 }
 
 .slick-dots li {
@@ -545,6 +550,7 @@ body {
     border: none;
     font-weight: 700;
     transition: all 1s;
+    font-family: lato;
 }
 
 .latest_btn button {
@@ -596,6 +602,7 @@ body {
 .card_item_one .card_item_text a {
     color: var(--yellow-color);
     transition: all 1s;
+    font-family: lato;
 }
 
 .card_item_one .card_item_text a:hover {
@@ -620,7 +627,7 @@ body {
     font-size: 40px;
 }
 
-.latest_number .widget_illdy_counter .counter_description p {
+.latest_number .widget_illdy_counter .counter_description h1 {
     font-size: 20px;
     font-weight: bold;
 }
@@ -683,9 +690,7 @@ body {
     flex-grow: 1;
     margin: 10px 0;
 }
-.contact_box a{
-    color: var(--text-color);
-}
+
 .contact_box_left {
     padding: 0 20px;
 }
@@ -702,7 +707,11 @@ body {
 .container_box {
     display: flex;
     flex-direction: column;
+    font-family: lato;
 }
+.container_box a{
+    color: var(--text-color);   
+   }
 
 .team_icon_contact {
     display: flex;
@@ -720,6 +729,10 @@ body {
 
 .contact_input {
     flex-grow: 1;
+    font-family: lato;
+    line-height: 30px;
+    color: var(--text-color);
+    margin: 10px 0;
 }
 
 .form_contact {
@@ -750,6 +763,7 @@ body {
 
 .input_form {
     text-align: end;
+    margin: 50px 0px;
 }
 
 .input_form input {
@@ -778,6 +792,7 @@ body {
 
 .textwidget {
     margin-top: 20px;
+    font-family: lato;
 }
 
 .textwidget a {
@@ -808,6 +823,9 @@ body {
 
 .team_card_content {
     margin-top: 50px;
+}
+.copyright2{
+    color: var(--white-color);
 }
 
 
@@ -968,17 +986,19 @@ body {
 }
 
 /* end_poter_blog */
-/*end page blog */
+/*end page blog */ 
 /* page read more */
 .card_blog {
     overflow: hidden;
     text-align: center;
     font-size: 14px;
+    color: var(--text-color);
 }
 
 .card_blog_text h3 {
     margin: 10px;
     font-size: 18px;
+    color: var(--yellow-color);
 }
 
 .card_blog_img {
@@ -1046,6 +1066,15 @@ body {
     margin: 20px 0;
     display: flex;
     flex-wrap: wrap;
+    color: var(--text-color);
+    font-family: lato;
+
+}
+.comment_blog h4{
+    font-weight:400;
+}
+.comment_blog h4 span{
+    color: var(--yellow-color);
 }
 
 .comment_card_blog_img{
@@ -1063,9 +1092,7 @@ body {
 .blog_user{
     margin-left: 100px;
 }
-.comment_blog h4{
-    color: var(--title-color);
-}
+
 /* end page read more */
 
 
@@ -1154,7 +1181,9 @@ body {
     .container_box {
         flex-direction: row;
         justify-content: space-between;
+        font-family: lato;
     }
+  
 
     .contact_box {
         flex-direction: row;
